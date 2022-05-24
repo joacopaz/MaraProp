@@ -51,7 +51,7 @@ header nav {
 	font-weight: bold;
 	width: 100%;
 	position: absolute;
-	bottom: 0px;
+	bottom: 1rem;
 	flex-shrink: 1;
 }
 header div {
