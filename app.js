@@ -79,7 +79,6 @@ const next = async () => {
     currentSlide.style.visibility = 'hidden'
     currentSlide.style.animationName = ''
     animating = false;
-
 }
 
 const prev = async () => {
