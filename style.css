@@ -21,6 +21,10 @@ body {
 .logo img[alt="Menu"] {
 	height: 20px;
 }
+.logo img[alt="Logo"] {
+	max-width: 60%;
+}
+
 .logo img[alt="Search"] {
 	height: 25px;
 }
@@ -58,12 +62,14 @@ header div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(169, 44, 44, 0.626);
+	color: white;
+	background-color: rgba(169, 44, 44, 0.376);
 	border-radius: 20px;
 }
 header a {
 	text-decoration: none;
 	color: white;
+	text-align: center;
 }
 header a:hover {
 	text-decoration: underline;
@@ -132,12 +138,14 @@ header div > * {
 	height: 100%;
 	background-color: lightblue;
 	z-index: -100;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
 }
 
 .carrousel div {
 	position: absolute;
 }
-.carrousel .slide.start {
+.carrousel .start.slide {
 	display: flex;
 	visibility: visible;
 }
@@ -179,4 +187,21 @@ header div > * {
 	background-color: white;
 	cursor: pointer;
 	caret-color: transparent;
+}
+
+@keyframes left {
+	from {
+		transform: translate(0, 0);
+	}
+	to {
+		transform: translate(-100%, 0);
+	}
+}
+@keyframes right {
+	from {
+		transform: translate(0, 0);
+	}
+	to {
+		transform: translate(100%, 0);
+	}
 }
