@@ -8,6 +8,7 @@ let slide7 = document.getElementById('slide_7')
 let slide8 = document.getElementById('slide_8')
 let slide9 = document.getElementById('slide_9')
 let slide10 = document.getElementById('slide_10')
+let animating;
 
 let slideIndex = 1;
 
@@ -16,6 +17,8 @@ const wait = (ms) => {
 }
 
 const next = async () => {
+    if (animating) return
+    animating = true;
     let currentSlide;
     let nextSlide;
     switch (slideIndex) {
@@ -75,9 +78,13 @@ const next = async () => {
     nextSlide.style.animationName = ''
     currentSlide.style.visibility = 'hidden'
     currentSlide.style.animationName = ''
+    animating = false;
+
 }
 
 const prev = async () => {
+    if (animating) return
+    animating = true;
     let currentSlide;
     let nextSlide;
     switch (slideIndex) {
@@ -137,4 +144,8 @@ const prev = async () => {
     nextSlide.style.animationName = ''
     currentSlide.style.visibility = 'hidden'
     currentSlide.style.animationName = ''
+    animating = false;
 }
+
+
+alert('Este sitio se encuentra en construcción, el acceso es sólo para debugging')
