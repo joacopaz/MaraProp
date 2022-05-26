@@ -11,7 +11,7 @@ let slide10 = document.getElementById('slide_10')
 
 let slideIndex = 1;
 
-function wait(ms) {
+const wait = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
@@ -65,7 +65,6 @@ const next = async () => {
             nextSlide = slide2
             break;
     }
-    console.log(currentSlide)
     currentSlide.style.animationName = 'left'
     nextSlide.style.left = '100%'
     nextSlide.style.visibility = 'visible'
