@@ -10,13 +10,20 @@
 	</head>
 	<body>
 		<div class="logo">
-			<button type="button" class="collapsible">
+			<button type="button" class="collapsible" onclick="switchNav()">
 				<div class="menu"></div>
 			</button>
 			<img src="./Logo Mara Propiedades Blanco.png" alt="Logo" />
 			<button type="button" class="collapsible">
 				<div class="search"></div>
 			</button>
+			<nav class="nav-menu">
+				<a href="#">Home</a>
+				<a href="#">Blog</a>
+				<a href="#">Work</a>
+				<a href="#">About</a>
+				<div class="dot"></div>
+			</nav>
 		</div>
 		<header>
 			<nav>
@@ -61,5 +68,6 @@
 			<div class="slide" id="slide_10">10</div>
 		</section>
 		<script src="carrousel.js"></script>
+		<script src="navbar.js"></script>
 	</body>
 </html>

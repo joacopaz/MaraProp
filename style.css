@@ -7,6 +7,9 @@
 body {
 	background-color: rgb(83, 6, 6);
 }
+
+/* Nav */
+
 .logo {
 	display: flex;
 	justify-content: space-between;
@@ -14,16 +17,15 @@ body {
 	color: white;
 	height: 100px;
 	text-align: center;
-	margin: 0 auto;
-	margin: 1rem;
 	caret-color: transparent;
+	position: relative;
+	padding: 1rem;
+	overflow: visible;
 }
 .logo button {
 	border: none;
 	background: none;
 	cursor: pointer;
-	display: flex;
-	width: fit-content;
 }
 
 .logo button div {
@@ -52,13 +54,82 @@ body {
 
 .logo img {
 	max-height: 100%;
-	background-color: rgb(83, 6, 6);
 	max-width: 60%;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.nav-menu {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	background: #272727;
+	left: 0;
+	/* -16 bottom is fully visible, -46 is hidden */
+	bottom: -46px;
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	transition: bottom 1s;
+}
+
+.nav-menu a {
+	color: #f6f4e6;
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+	display: inline-block;
+	width: 80px;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .nav-menu a:hover {
+	color: #fddb3a;
+  }
+  
+  .nav-menu .dot {
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	background: #fddb3a;
+	border-radius: 50%;
+	opacity: 0;
+	transform: translate(-118px,10px);
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .nav-menu a:nth-child(1):hover ~ .dot {
+	transform: translate(-118px,10px);
+	transition: all 0.2s ease-in-out;
+	opacity: 1;
+  }
+  
+  .nav-menu a:nth-child(2):hover ~ .dot {
+	transform: translate(-40px,10px);
+	transition: all 0.2s ease-in-out;
+	opacity: 1;
+  }
+  
+  .nav-menu a:nth-child(3):hover ~ .dot {
+	transform: translate(41px,10px);
+	transition: all 0.2s ease-in-out;
+	opacity: 1;
+  }
+  
+  .nav-menu a:nth-child(4):hover ~ .dot {
+	transform: translate(120px,10px);
+	transition: all 0.2s ease-in-out;
+	opacity: 1;
+  }
+
+/* Header contact */
+
 header {
 	width: 100%;
-	margin: 2rem auto;
+	margin: 1rem auto;
 	height: 300px;
 	display: flex;
 	align-items: center;
@@ -70,6 +141,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
+	z-index: 100;
 }
 header nav {
 	display: flex;
