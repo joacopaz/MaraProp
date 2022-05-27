@@ -149,4 +149,4 @@ const prev = async () => {
 }
 
 
-alert('Este sitio se encuentra en construcción, el acceso es sólo para debugging')
+// alert('Este sitio se encuentra en construcción, el acceso es sólo para debugging')

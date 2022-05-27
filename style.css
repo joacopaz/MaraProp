@@ -16,21 +16,44 @@ body {
 	text-align: center;
 	margin: 0 auto;
 	margin: 1rem;
+	caret-color: transparent;
+}
+.logo button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	display: flex;
+	width: fit-content;
 }
 
-.logo img[alt="Menu"] {
-	height: 20px;
-}
-.logo img[alt="Logo"] {
-	max-width: 60%;
-}
-
-.logo img[alt="Search"] {
+.logo button div {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 22px;
 	height: 25px;
 }
+
+.logo .menu {
+	background-image: url('./img/menu.png');
+}
+
+.logo .menu:hover {
+	background-image: url('./img/menu-hover.png');
+}
+
+.logo .search {
+	background-image: url('./img/zoom-search-find-glass-icon.png');
+}
+
+.logo .search:hover {
+	background-image: url('./img/zoom-search-find-glass-icon-hover.png');
+}
+
 .logo img {
 	max-height: 100%;
 	background-color: rgb(83, 6, 6);
+	max-width: 60%;
 }
 
 header {
