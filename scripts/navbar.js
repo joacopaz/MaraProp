@@ -1,5 +1,4 @@
 let nav = document.querySelector('.nav-menu')
-let menuButton = document.querySelector('.menu')
 
 let state = 0;
 

@@ -14,9 +14,16 @@
 				<div class="menu"></div>
 			</button>
 			<img src="./Logo Mara Propiedades Blanco.png" alt="Logo" />
-			<button type="button" class="collapsible">
+			<button
+				type="button"
+				class="collapsible"
+				onclick="searchbar(); return false"
+			>
 				<div class="search"></div>
 			</button>
+			<div id="search-bar">
+				<input type="search" name="" placeholder="Buscar" />
+			</div>
 			<nav class="nav-menu">
 				<a href="#">Home</a>
 				<a href="#">Blog</a>
@@ -67,7 +74,8 @@
 			<div class="slide" id="slide_9">9</div>
 			<div class="slide" id="slide_10">10</div>
 		</section>
-		<script src="carrousel.js"></script>
-		<script src="navbar.js"></script>
+		<script src="scripts/carrousel.js"></script>
+		<script src="scripts/navbar.js"></script>
+		<script src="scripts/searchbar.js"></script>
 	</body>
 </html>
