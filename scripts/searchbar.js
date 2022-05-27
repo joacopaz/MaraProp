@@ -12,12 +12,12 @@ const searchbar = () => {
 }
 const show = async () => {
     animation = true
-    sbContent.style.visibility = 'hidden'
+    sbContent.style.opacity = '0'
     sb.style.display = 'flex';
     await wait(1)
     sb.style.width = '150px'
+    sbContent.style.opacity = '100'
     await wait(1000)
-    sbContent.style.visibility = 'visible'
     expanded = 1
     animation = false
 }
@@ -27,7 +27,7 @@ const retract = async () => {
     if (typeof sbContent.value !== 'undefined' && sbContent.value.length > 0) console.log(`Value is ${sbContent.value}`)
 
     sb.style.width = '1px'
-    sbContent.style.visibility = 'hidden';
+    sbContent.style.opacity = '0';
     expanded = 0
     await wait(1000)
     sb.style.display = ''

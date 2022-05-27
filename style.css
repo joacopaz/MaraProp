@@ -154,6 +154,7 @@ body {
 	caret-color: auto;
 	font-size: 0.7rem;
 	text-align: center;
+	transition: opacity 1s;
 }
 
 /* Header contact */
