@@ -5,7 +5,7 @@ let expanded = 0
 let animation = false
 
 const searchbar = () => {
-    if (animation) return
+    if (animation) return false
     if (!expanded) return show();
     retract()
     return false
@@ -21,16 +21,17 @@ const show = async () => {
     await wait(1000)
     expanded = 1
     animation = false
+    return false
 }
 
 const retract = async () => {
     animation = true
     if (typeof sbContent.value !== 'undefined' && sbContent.value.length > 0) console.log(`Value is ${sbContent.value}`)
-
     sb.style.width = '1px'
     sbContent.style.opacity = '0';
     expanded = 0
     await wait(1000)
     sb.style.display = ''
     animation = false
+    return false
 }

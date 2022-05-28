@@ -17,7 +17,7 @@ const wait = (ms) => {
 }
 
 const next = async () => {
-    if (animating) return
+    if (animating) return false
     animating = true;
     let currentSlide;
     let nextSlide;
@@ -83,7 +83,7 @@ const next = async () => {
 }
 
 const prev = async () => {
-    if (animating) return
+    if (animating) return false
     animating = true;
     let currentSlide;
     let nextSlide;
@@ -149,4 +149,4 @@ const prev = async () => {
 }
 
 
-// alert('Este sitio se encuentra en construcción, el acceso es sólo para debugging')
+alert('Este sitio se encuentra en construcción, el acceso es sólo para debugging')
