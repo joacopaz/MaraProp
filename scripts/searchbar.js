@@ -12,6 +12,7 @@ const searchbar = () => {
 }
 const show = async () => {
     animation = true
+    sbContent.value = ''
     sbContent.style.opacity = '0'
     sb.style.display = 'flex';
     await wait(1)
