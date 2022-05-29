@@ -16,6 +16,24 @@ const wait = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+const nxt = document.querySelector('.next')
+const nxtI = document.querySelector('.next i')
+const prv = document.querySelector('.prev')
+const prvI = document.querySelector('.prev i')
+
+nxt.addEventListener('mouseover', () => {
+    nxtI.classList.add('fa-beat')
+})
+nxt.addEventListener('mouseleave', () => {
+    nxtI.classList.remove('fa-beat')
+})
+prv.addEventListener('mouseover', () => {
+    prvI.classList.add('fa-beat')
+})
+prv.addEventListener('mouseleave', () => {
+    prvI.classList.remove('fa-beat')
+})
+
 const next = async () => {
     if (animating) return false
     animating = true;
