@@ -9,7 +9,6 @@ let slide8 = document.getElementById('slide_8')
 let slide9 = document.getElementById('slide_9')
 let slide10 = document.getElementById('slide_10')
 let animating;
-
 let slideIndex = 1;
 
 // Functions
@@ -19,7 +18,7 @@ const wait = (ms) => {
 }
 
 const next = async () => {
-    if (animating) return false
+    if (animating) return
     animating = true;
     let currentSlide;
     let nextSlide;
@@ -81,11 +80,10 @@ const next = async () => {
     currentSlide.style.visibility = 'hidden'
     currentSlide.style.animationName = ''
     animating = false;
-    return false;
 }
 
 const prev = async () => {
-    if (animating) return false
+    if (animating) return
     animating = true;
     let currentSlide;
     let nextSlide;
@@ -147,9 +145,7 @@ const prev = async () => {
     currentSlide.style.visibility = 'hidden'
     currentSlide.style.animationName = ''
     animating = false;
-    return false;
 }
-
 
 // Event listeners for next and previous buttons
 
@@ -159,9 +155,14 @@ const prv = document.querySelector('.prev')
 const prvI = document.querySelector('.prev i')
 
 // onclick functions
-nxt.onclick = next
-prv.onclick = prev
-
+nxt.addEventListener('click', (e) => {
+    e.preventDefault();
+    next();
+})
+nxt.addEventListener('click', (e) => {
+    e.preventDefault();
+    prev();
+})
 
 // Beat styling
 nxt.addEventListener('mouseover', () => {
@@ -176,7 +177,5 @@ prv.addEventListener('mouseover', () => {
 prv.addEventListener('mouseleave', () => {
     prvI.classList.remove('fa-beat')
 })
-
-
 
 alert('Este sitio se encuentra en construcción, el acceso es sólo para debugging')
