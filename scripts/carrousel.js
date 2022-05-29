@@ -149,6 +149,11 @@ const prev = async () => {
     return false
 }
 
+const focusFirst = () => {
+    document.querySelector('button[tabindex="1"]').focus()
+}
+
+
 // Event listeners for next and previous buttons
 
 const nxt = document.querySelector('.next')
@@ -165,6 +170,18 @@ nxt.addEventListener('click', (e) => {
 prv.addEventListener('click', (e) => {
     e.preventDefault();
     prev();
+    return false;
+})
+
+// keystrokes for carrousel
+nxt.addEventListener('keyup', (e) => {
+    e.preventDefault()
+    if (document.activeElement === nxt && (e.keyCode === 32 || e.keyCode == 13)) next();
+    return false;
+})
+prv.addEventListener('keyup', (e) => {
+    e.preventDefault()
+    if (document.activeElement === prv && (e.keyCode == 32 || e.keyCode == 13)) prev();
     return false;
 })
 

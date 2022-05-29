@@ -13,11 +13,16 @@
 		<title>Mara Propiedades</title>
 	</head>
 	<body>
+		<span
+			tabindex="1"
+			onfocus='document.querySelector(".autofocus2").focus()'
+		></span>
 		<div class="logo">
 			<button
 				type="button"
-				class="collapsible"
+				class="collapsible autofocus1"
 				onclick="switchNav(); return false"
+				tabindex="2"
 			>
 				<div class="menu"></div>
 			</button>
@@ -26,6 +31,7 @@
 				type="button"
 				class="collapsible"
 				onclick="searchbar(); return false"
+				tabindex="3"
 			>
 				<div class="search"></div>
 			</button>
@@ -45,30 +51,33 @@
 				<div>
 					<img src="./img/whatsapp.png" alt="whatsapp" /><a
 						href="https://wa.me/5491165708040"
+						tabindex="8"
 					>
 						<span>+54 9 11 6570 8040</span>
 					</a>
 				</div>
 				<div>
-					<img src="./img/phone.png" alt="phone" /><a href="tel:541147812545"
+					<img src="./img/phone.png" alt="phone" /><a
+						href="tel:541147812545"
+						tabindex="9"
 						>+ 54 11 4781 2545</a
 					>
-					| <a href="tel:541147884780">+ 54 11 4788 4780</a><span></span>
+					| <a href="tel:541147884780" tabindex="10">+ 54 11 4788 4780</a
+					><span></span>
 				</div>
 				<div>
-					<img src="./img/mail.png" alt="mail" /><span
-						><a href="mailto:propiedadesmara@gmail.com"
-							>propiedadesmara@gmail.com</a
-						></span
-					>
+					<img src="./img/mail.png" alt="mail" />
+					<a href="mailto:propiedadesmara@gmail.com" tabindex="11">
+						<span>propiedadesmara@gmail.com</span>
+					</a>
 				</div>
 			</nav>
 		</header>
 		<section class="carrousel">
-			<div class="next">
+			<div class="next autofocus2" tabindex="13">
 				<i class="fa-solid fa-arrow-right"></i>
 			</div>
-			<div class="prev">
+			<div class="prev" tabindex="12">
 				<i class="fa-solid fa-arrow-left"></i>
 			</div>
 			<div class="start slide" id="slide_1">
@@ -86,6 +95,10 @@
 			<div class="slide" id="slide_9">9 Placeholder</div>
 			<div class="slide" id="slide_10">10 Placeholder</div>
 		</section>
+		<span
+			tabindex="14"
+			onfocus="document.querySelector('.autofocus1').focus()"
+		></span>
 		<script src="scripts/carrousel.js"></script>
 		<script src="scripts/navbar.js"></script>
 		<script src="scripts/searchbar.js"></script>
