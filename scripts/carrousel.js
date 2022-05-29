@@ -10,6 +10,7 @@ let slide9 = document.getElementById('slide_9')
 let slide10 = document.getElementById('slide_10')
 let animating;
 let slideIndex = 1;
+let scrollY;
 
 // Functions
 
