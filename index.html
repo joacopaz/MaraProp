@@ -73,27 +73,29 @@
 				</div>
 			</nav>
 		</header>
-		<section class="carrousel">
-			<div class="next autofocus2" tabindex="13">
-				<i class="fa-solid fa-arrow-right"></i>
-			</div>
-			<div class="prev" tabindex="12">
+		<section class="carrousel" data-carrousel>
+			<div class="prev" tabindex="12" data-carrousel-button="prev">
 				<i class="fa-solid fa-arrow-left"></i>
 			</div>
-			<div class="start slide" id="slide_1">
-				<img src="./img/Carrousel1.jpg" alt="Propiedad 1" />
+			<div class="next autofocus2" tabindex="13" data-carrousel-button="next">
+				<i class="fa-solid fa-arrow-right"></i>
 			</div>
-			<div class="slide" id="slide_2">
-				<img src="./img/Carrousel2.jpg" alt="Propiedad 2" />
-			</div>
-			<div class="slide" id="slide_3">3 Placeholder</div>
-			<div class="slide" id="slide_4">4 Placeholder</div>
-			<div class="slide" id="slide_5">5 Placeholder</div>
-			<div class="slide" id="slide_6">6 Placeholder</div>
-			<div class="slide" id="slide_7">7 Placeholder</div>
-			<div class="slide" id="slide_8">8 Placeholder</div>
-			<div class="slide" id="slide_9">9 Placeholder</div>
-			<div class="slide" id="slide_10">10 Placeholder</div>
+			<ul class="slides" data-slides>
+				<li class="slide" data-active>
+					<img src="./img/Carrousel1.jpg" alt="Propiedad 1" />
+				</li>
+				<li class="slide">
+					<img src="./img/Carrousel2.jpg" alt="Propiedad 2" />
+				</li>
+				<li class="slide">3 Placeholder</li>
+				<li class="slide">4 Placeholder</li>
+				<li class="slide">5 Placeholder</li>
+				<li class="slide">6 Placeholder</li>
+				<li class="slide">7 Placeholder</li>
+				<li class="slide">8 Placeholder</li>
+				<li class="slide">9 Placeholder</li>
+				<li class="slide">10 Placeholder</li>
+			</ul>
 		</section>
 		<span
 			tabindex="14"
