@@ -6,11 +6,12 @@ let animation = false
 
 const wait = ms => new Promise(r => setTimeout(r, ms));
 
-const searchbar = () => {
+const searchbar = async () => {
+    sb.style.display = 'flex'
+    await wait(50)
     if (animation) return false
     if (!expanded) return show();
     retract()
-    return false
 }
 const show = async () => {
     animation = true
@@ -23,7 +24,6 @@ const show = async () => {
     await wait(1000)
     expanded = 1
     animation = false
-    return false
 }
 
 const retract = async () => {
@@ -35,5 +35,4 @@ const retract = async () => {
     await wait(1000)
     sb.style.display = ''
     animation = false
-    return false
 }

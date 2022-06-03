@@ -142,11 +142,10 @@ body {
 	background-color: white;
 	border-radius: 20px;
 	cursor: default;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	border: black 1px solid;
-	display: none;
 	transition: width 1s;
 }
 #search-bar input {
@@ -261,7 +260,7 @@ header div > * {
 .carrousel {
 	min-width: 300px;
 	display: flex;
-	height: 800px;
+	height: 500px;
 	align-items: center;
 	justify-content: center;
 	position: relative;

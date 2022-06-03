@@ -33,8 +33,8 @@ buttons.forEach(button => {
         const nxt = document.querySelector('[data-carrousel-button="next"]')
         const prv = document.querySelector('[data-carrousel-button="prev"]')
         e.preventDefault()
-        if (document.activeElement === nxt && (e.keyCode === 32 || e.keyCode == 13)) next();
-        if (document.activeElement === prv && (e.keyCode == 32 || e.keyCode == 13)) prev();
+        if (document.activeElement === nxt && (e.keyCode === 32 || e.keyCode == 13)) nxt.click();
+        if (document.activeElement === prv && (e.keyCode == 32 || e.keyCode == 13)) prv.click();
         return false;
 
     })
