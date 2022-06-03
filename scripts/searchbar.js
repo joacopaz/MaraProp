@@ -4,6 +4,8 @@ const sbContent = document.querySelector('#search-bar input')
 let expanded = 0
 let animation = false
 
+const wait = ms => new Promise(r => setTimeout(r, ms));
+
 const searchbar = () => {
     if (animation) return false
     if (!expanded) return show();
