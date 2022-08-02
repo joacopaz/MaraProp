@@ -286,7 +286,7 @@ header div > * {
 	transition: opacity 200ms, left 200ms;
 	transition-delay: 200ms;
 	caret-color: transparent;
-	z-index: 1;
+	z-index: 0;
 }
 
 .slide > img {
@@ -318,14 +318,15 @@ header div > * {
 	left: 0;
 	z-index: 2;
 }
-.slide[data-active] > img:hover {
+.slide[data-active] > img:hover,
+.slide[data-active] > img:focus {
 	transform: scale(1.03);
 	cursor: pointer;
 }
 .carrousel [data-carrousel-button] {
 	position: absolute;
 	color: rgba(255, 255, 255, 0.5);
-	z-index: 2;
+	z-index: 3;
 	top: 50%;
 	border: none;
 	transform: translateY(-50%);

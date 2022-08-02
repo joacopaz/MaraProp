@@ -74,4 +74,15 @@ prv.addEventListener("mouseleave", (e) => {
 	return false;
 });
 
+const imgs = document.querySelectorAll(".slide > img");
+
+imgs.forEach((img) => {
+	img.addEventListener("click", (e) => {
+		const alt = e.target.alt;
+		sessionStorage.setItem("propiedad", alt);
+		e.preventDefault();
+		window.open("propiedad.html", "_blank");
+	});
+});
+
 // alert('Este sitio se encuentra en construcción, el acceso es sólo para debugging')

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/6def926482.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+		<title>Mara Propiedades</title>
+	</head>
+	<body>
+		<span
+			tabindex="1"
+			onfocus='document.querySelector(".autofocus2").focus()'
+		></span>
+		<div class="logo">
+			<button
+				type="button"
+				class="collapsible autofocus1"
+				onclick="switchNav(); return false"
+				tabindex="2"
+			>
+				<div class="menu"></div>
+			</button>
+			<img src="./Logo Mara Propiedades Blanco.png" alt="Logo" />
+			<button
+				type="button"
+				class="collapsible"
+				onclick="searchbar()"
+				tabindex="3"
+			>
+				<div class="search"></div>
+			</button>
+			<div id="search-bar">
+				<input type="search" name="" placeholder="Buscar" />
+			</div>
+			<nav class="nav-menu">
+				<a href="#">Home</a>
+				<a href="#">Blog</a>
+				<a href="#">Work</a>
+				<a href="#">About</a>
+				<div class="dot"></div>
+			</nav>
+		</div>
+		<header>
+			<nav>
+				<div>
+					<img src="./img/whatsapp.png" alt="whatsapp" /><a
+						href="https://api.WhatsApp.com/send?phone=5491165708040"
+						tabindex="8"
+						data-whatsapp
+					>
+						<span>+54 9 11 6570 8040</span>
+					</a>
+				</div>
+				<div>
+					<img src="./img/phone.png" alt="phone" /><a
+						href="tel:541147812545"
+						tabindex="9"
+						>+ 54 11 4781 2545</a
+					>
+					| <a href="tel:541147884780" tabindex="10">+ 54 11 4788 4780</a
+					><span></span>
+				</div>
+				<div>
+					<img src="./img/mail.png" alt="mail" />
+					<a href="mailto:propiedadesmara@gmail.com" tabindex="11">
+						<span>propiedadesmara@gmail.com</span>
+					</a>
+				</div>
+			</nav>
+		</header>
+		<section class="carrousel" data-carrousel>
+			<div class="prev" tabindex="12" data-carrousel-button="prev">
+				<i class="fa-solid fa-arrow-left"></i>
+			</div>
+			<div class="next autofocus2" tabindex="13" data-carrousel-button="next">
+				<i class="fa-solid fa-arrow-right"></i>
+			</div>
+			<ul class="slides" data-slides>
+				<li class="slide" data-active></li>
+				<li class="slide">Placeholder 2</li>
+			</ul>
+		</section>
+		<span
+			tabindex="14"
+			onfocus="document.querySelector('.autofocus1').focus()"
+		></span>
+		<script src="scripts/carrousel.js"></script>
+		<script src="scripts/navbar.js"></script>
+		<script src="scripts/searchbar.js"></script>
+		<script src="scripts/whatsapp.js"></script>
+		<script src="scripts/generarProp.js"></script>
+	</body>
+</html>
