@@ -1,0 +1,33 @@
+.property {
+	display: flex;
+	margin: 0 auto;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 1rem;
+}
+.carrousel {
+	height: 400px;
+	width: min-content;
+}
+.slide {
+	overflow: hidden;
+}
+.property-info,
+.descripcion {
+	color: white;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.property-info h1 {
+	font-size: 2rem;
+	text-align: center;
+	width: max-content;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+
+.descripcion {
+	white-space: pre-line;
+	max-width: 1000px;
+	padding-bottom: 1rem;
+}

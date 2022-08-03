@@ -81,7 +81,7 @@ imgs.forEach((img) => {
 		const alt = e.target.alt;
 		sessionStorage.setItem("propiedad", alt);
 		e.preventDefault();
-		window.open("propiedad.html", "_blank");
+		location.href = "../propiedad.html";
 	});
 });
 

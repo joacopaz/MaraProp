@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="propiedad.css" />
 		<script
 			src="https://kit.fontawesome.com/6def926482.js"
 			crossorigin="anonymous"
@@ -40,7 +41,7 @@
 				<input type="search" name="" placeholder="Buscar" />
 			</div>
 			<nav class="nav-menu">
-				<a href="#">Home</a>
+				<a href="./">Home</a>
 				<a href="#">Blog</a>
 				<a href="#">Work</a>
 				<a href="#">About</a>
@@ -75,17 +76,32 @@
 				</div>
 			</nav>
 		</header>
-		<section class="carrousel" data-carrousel>
-			<div class="prev" tabindex="12" data-carrousel-button="prev">
-				<i class="fa-solid fa-arrow-left"></i>
-			</div>
-			<div class="next autofocus2" tabindex="13" data-carrousel-button="next">
-				<i class="fa-solid fa-arrow-right"></i>
-			</div>
-			<ul class="slides" data-slides>
-				<li class="slide" data-active></li>
-				<li class="slide">Placeholder 2</li>
-			</ul>
+		<section class="property">
+			<article class="carrousel" data-carrousel>
+				<div class="prev" tabindex="12" data-carrousel-button="prev">
+					<i class="fa-solid fa-arrow-left"></i>
+				</div>
+				<div class="next autofocus2" tabindex="13" data-carrousel-button="next">
+					<i class="fa-solid fa-arrow-right"></i>
+				</div>
+				<ul class="slides" data-slides>
+					<li class="slide" data-active></li>
+					<!-- <li class="slide">Placeholder 2</li> -->
+				</ul>
+			</article>
+			<article class="property-info">
+				<h1 data-ubicacion></h1>
+				<p data-tipo></p>
+				<p data-alquilerMensual>Alquiler: &nbsp</p>
+				<p data-expensas>Expensas: &nbsp</p>
+				<p data-antiguedad>Antigüedad: &nbsp</p>
+				<p data-pisos>Pisos: &nbsp</p>
+				<p data-superficie>Superficie: &nbsp</p>
+				<p data-medidas>Medidas - &nbsp</p>
+				<p data-banios>Baños: &nbsp</p>
+				<p data-cocheras>Cocheras: &nbsp</p>
+				<p data-descripcion class="descripcion">Descripción: &nbsp <br /></p>
+			</article>
 		</section>
 		<span
 			tabindex="14"
