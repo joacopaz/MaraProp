@@ -397,6 +397,10 @@ document.querySelector("[data-superficie]").textContent += texto.superficie;
 document.querySelector("[data-medidas]").textContent +=
 	texto.medidas.join(", ");
 document.querySelector("[data-banios]").textContent += texto.banios;
-document.querySelector("[data-cocheras]").textContent += texto.cocheras;
+if (texto.cocheras) {
+	document.querySelector("[data-cocheras]").textContent += texto.cocheras;
+} else {
+	document.querySelector("[data-cocheras]").style.display = "none";
+}
 document.querySelector("[data-descripcion]").textContent +=
 	texto.descripcion.join("\r\n");
