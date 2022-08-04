@@ -39,3 +39,7 @@ const retract = async () => {
 	sb.style.display = "";
 	animation = false;
 };
+
+sbContent.addEventListener("keypress", (e) => {
+	if (e.key === "Enter") searchbar();
+});
