@@ -4,10 +4,13 @@
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
+	flex-wrap: wrap;
+	padding: 1rem;
 }
 .carrousel {
 	width: 100%;
 	max-width: 30%;
+	max-height: 50vmax;
 }
 .slide {
 	overflow: hidden;
@@ -20,14 +23,15 @@
 .property-info h1 {
 	font-size: 2rem;
 	text-align: center;
-	width: max-content;
-}
-.wrap {
-	flex-wrap: wrap;
 }
 
 .descripcion {
 	white-space: pre-line;
 	max-width: 1000px;
 	padding-bottom: 1rem;
+}
+@media screen and (max-width: 500px) {
+	html {
+		font-size: 12px;
+	}
 }
