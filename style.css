@@ -10,6 +10,45 @@ body {
 	width: 100v;
 }
 
+/* Loader */
+
+.loader {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100vh;
+	width: 100vw;
+	z-index: 100;
+	background-color: #82454b;
+	flex-direction: column;
+	gap: 2rem;
+	padding-top: 10vh;
+}
+
+.loader [alt="Loading"] {
+	width: 20vw;
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	z-index: 100;
+}
+.loader [alt="Mara Prop"] {
+	width: 50vw;
+	z-index: 100;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 /* Nav */
 
 .logo {
@@ -183,7 +222,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
-	z-index: 100;
+	z-index: 10;
 }
 header::before {
 	content: "";
