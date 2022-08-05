@@ -264,11 +264,15 @@ header div > * {
 
 .carrousel {
 	min-width: 300px;
+	max-width: 50vmax;
+	margin: 0 auto;
 	display: flex;
 	height: 600px;
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	user-select: none;
+	overflow: hidden;
 }
 
 .carrousel .slide {
