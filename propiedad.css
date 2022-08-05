@@ -8,21 +8,30 @@
 	padding: 1rem;
 }
 .carrousel {
-	width: 100%;
-	max-width: 30%;
-	max-height: 50vmax;
+	max-height: 400px;
+	margin: 0;
 }
 .slide {
 	overflow: hidden;
 }
 .property-info,
-.descripcion {
+.descripcion,
+.pdf {
 	color: white;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+p {
+	font-weight: bold;
+}
+span {
+	font-weight: initial;
+}
+
 .property-info h1 {
 	font-size: 2rem;
 	text-align: center;
+	margin: 1rem;
 }
 
 .descripcion {
@@ -30,8 +39,28 @@
 	max-width: 1000px;
 	padding-bottom: 1rem;
 }
+.pdf {
+	text-align: center;
+	padding: 1rem;
+	transition: background-color 500ms, border-color 500ms;
+	cursor: pointer;
+	border-radius: 1rem;
+	border: 1px solid rgba(255, 255, 255, 0);
+}
+.pdf:hover {
+	background-color: rgba(255, 0, 0, 0.261);
+	border-color: red;
+}
+.pdf img {
+	width: 100%;
+	max-width: 100px;
+	height: auto;
+}
 @media screen and (max-width: 500px) {
 	html {
 		font-size: 12px;
+	}
+	.carrousel {
+		height: 300px;
 	}
 }

@@ -38,7 +38,48 @@
 				<div class="search"></div>
 			</button>
 			<div id="search-bar">
-				<input type="search" name="" placeholder="Buscar" />
+				<input list="propiedades" type="search" name="" placeholder="Buscar" />
+				<datalist id="propiedades">
+					<option
+						value="Av. Cabildo 2677, Belgrano 4°A"
+						data-propiedad="1"
+					></option>
+					<option
+						value="Av. Cabildo 2677, Belgrano 4°C"
+						data-propiedad="2"
+					></option>
+					<option
+						value="Av. Cabildo 2677, Belgrano 5°"
+						data-propiedad="3"
+					></option>
+					<option
+						value="Av. Cabildo 2677, Belgrano 6°"
+						data-propiedad="4"
+					></option>
+					<option
+						value="Av. Cabildo 2677, Belgrano 9°A"
+						data-propiedad="5"
+					></option>
+					<option
+						value="Av. Cabildo 2677, Belgrano 9°B"
+						data-propiedad="6"
+					></option>
+					<option value="Av. Córdoba 3341 PB" data-propiedad="7"></option>
+					<option value="Av. Cordoba 3341 PB" data-propiedad="7"></option>
+					<option value="Av. Córdoba 3341 1°" data-propiedad="8"></option>
+					<option value="Av. Cordoba 3341 1°" data-propiedad="8"></option>
+					<option value="Av. Córdoba 3341 2° y 3°" data-propiedad="9"></option>
+					<option value="Av. Cordoba 3341 2° y 3°" data-propiedad="9"></option>
+					<option value="Av. Humboldt 2495 3°" data-propiedad="10"></option>
+					<option value="Av. Humboldt 2495 4°" data-propiedad="11"></option>
+					<option value="Av. Humboldt 2495 5°" data-propiedad="12"></option>
+					<option value="Av. Humboldt 2495 6°" data-propiedad="13"></option>
+					<option value="Av. Humboldt 2495 7°" data-propiedad="14"></option>
+					<option value="Olleros 2387 1°" data-propiedad="15"></option>
+					<option value="Olleros 2387 2°" data-propiedad="16"></option>
+					<option value="Olleros 2387 3°" data-propiedad="17"></option>
+					<option value="Olleros 2387 4°" data-propiedad="18"></option>
+				</datalist>
 			</div>
 			<nav class="nav-menu">
 				<a href="./index.html">Home</a>
@@ -91,17 +132,20 @@
 			</article>
 			<article class="property-info">
 				<h1 data-ubicacion></h1>
-				<p data-tipo></p>
-				<p data-alquilerMensual>Alquiler: &nbsp</p>
-				<p data-expensas>Expensas: &nbsp</p>
-				<p data-antiguedad>Antigüedad: &nbsp</p>
-				<p data-pisos>Pisos: &nbsp</p>
-				<p data-superficie>Superficie: &nbsp</p>
-				<p data-medidas>Medidas - &nbsp</p>
-				<p data-banios>Baños: &nbsp</p>
-				<p data-cocheras>Cocheras: &nbsp</p>
+				<span data-tipo></span>
+				<p>Alquiler: <span data-alquilerMensual></span></p>
+				<p>Expensas: <span data-expensas></span></p>
+				<p>Antigüedad: <span data-antiguedad></span></p>
+				<p>Pisos: <span data-pisos></span></p>
+				<p>Superficie: <span data-superficie></span></p>
+				<p>Medidas: <span data-medidas></span></p>
+				<p>Baños: <span data-banios></span></p>
+				<p data-cocheras-header>Cocheras: <span data-cocheras></span></p>
 			</article>
-			<p data-descripcion class="descripcion">Descripción: &nbsp <br /></p>
+			<p class="descripcion">
+				Descripción:
+				<span data-descripcion><br /></span>
+			</p>
 		</section>
 		<span
 			tabindex="14"

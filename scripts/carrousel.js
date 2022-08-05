@@ -6,9 +6,9 @@ let originalNext;
 if (carrouselSlides.length > 1) {
 	const lastSlide = carrouselSlides[carrouselSlides.length - 1];
 	const secondSlide = carrouselSlides[1];
-	lastSlide.style.animationName = "peakLeft";
+	lastSlide.style.animationName = "peakRight";
 	lastSlide.style.opacity = "50%";
-	secondSlide.style.animationName = "peakRight";
+	secondSlide.style.animationName = "peakLeft";
 	secondSlide.style.opacity = "50%";
 	originalPrev = lastSlide;
 	originalNext = secondSlide;
