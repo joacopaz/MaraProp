@@ -269,8 +269,6 @@ header div > * {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	overflow-x: hidden;
-	overflow-y: hidden;
 }
 
 .carrousel .slide {
@@ -283,15 +281,15 @@ header div > * {
 	font-size: 2rem;
 	color: white;
 	justify-content: center;
-	top: 0;
+	top: 0.5rem;
 	left: 0;
 	opacity: 0;
-	animation-duration: 200ms;
+	animation-duration: 600ms;
 	animation-fill-mode: forwards;
-	transition: opacity 200ms, left 200ms;
-	transition-delay: 200ms;
 	caret-color: transparent;
 	z-index: 0;
+	pointer-events: none;
+	overflow: hidden;
 }
 
 .slide > img {
@@ -299,39 +297,24 @@ header div > * {
 	height: 100%;
 	object-fit: contain;
 	transition: 500ms;
+	z-index: 5;
+	pointer-events: all;
 }
-
-@media screen and (max-width: 500px) {
-	.slide > img {
-		display: block;
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-		object-position: center;
-	}
-	.carrousel .slide {
-		flex-direction: column;
-	}
-	.carrousel {
-		height: 900px;
-	}
-}
-
 .slide[data-active] {
 	transition-delay: 0ms;
 	opacity: 100%;
 	left: 0;
 	z-index: 2;
 }
-.slide[data-active] > img:hover,
-.slide[data-active] > img:focus {
+.slide > img:hover,
+.slide > img:focus {
 	transform: scale(1.03);
 	cursor: pointer;
 }
 .carrousel [data-carrousel-button] {
 	position: absolute;
 	color: rgba(255, 255, 255, 0.5);
-	z-index: 3;
+	z-index: 5;
 	top: 50%;
 	border: none;
 	transform: translateY(-50%);
@@ -350,6 +333,11 @@ header div > * {
 	right: 1rem;
 }
 
+.prev.slide,
+.next.slide {
+	opacity: 50%;
+}
+
 [data-carrousel-button]:hover,
 [data-carrousel-button]:focus {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -359,37 +347,115 @@ header div > * {
 	outline: 1px solid black;
 }
 
+@media screen and (max-width: 500px) {
+	.slide > img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: center;
+		max-width: 200px;
+	}
+	.carrousel .slide {
+		flex-direction: column;
+		max-height: 400px;
+	}
+	.carrousel {
+		height: 900px;
+	}
+	.carrousel [data-carrousel-button] {
+		top: 2rem;
+	}
+}
+
 @keyframes exitLeft {
 	from {
 		left: 0;
+		opacity: 100%;
+		top: -1rem;
 	}
 	to {
-		left: -100%;
+		left: -50%;
+		opacity: 50%;
+		top: 0;
+	}
+}
+@keyframes enterLeft {
+	from {
+		left: 50%;
+		opacity: 50%;
+		top: 0;
+	}
+	to {
+		left: 0%;
+		opacity: 100%;
+		top: -1rem;
 	}
 }
 
 @keyframes exitRight {
 	from {
 		left: 0;
+		opacity: 100%;
+		top: -1rem;
 	}
 	to {
-		left: 100%;
-	}
-}
-@keyframes enterLeft {
-	from {
-		left: 100%;
-	}
-	to {
-		left: 0%;
+		left: 50%;
+		opacity: 50%;
+		top: 0rem;
 	}
 }
 
 @keyframes enterRight {
 	from {
-		left: -100%;
+		left: -50%;
+		opacity: 50%;
+		top: 0rem;
 	}
 	to {
 		left: 0%;
+		opacity: 100%;
+		top: -1rem;
+	}
+}
+
+@keyframes peakLeft {
+	from {
+		left: 100%;
+		opacity: 100%;
+	}
+	to {
+		left: 50%;
+		opacity: 50%;
+	}
+}
+@keyframes exitPeakLeft {
+	from {
+		left: -50%;
+		opacity: 50%;
+	}
+	to {
+		left: -100%;
+		opacity: 50%;
+	}
+}
+@keyframes peakRight {
+	from {
+		left: -100%;
+		opacity: 100%;
+	}
+	to {
+		left: -50%;
+		opacity: 50%;
+	}
+}
+@keyframes exitPeakRight {
+	from {
+		left: 50%;
+		opacity: 50%;
+	}
+	to {
+		left: 100%;
+		opacity: 50%;
 	}
 }

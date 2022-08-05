@@ -1,11 +1,30 @@
 let animating;
 
+const carrouselSlides = document.querySelector("[data-slides]").children;
+let originalPrev;
+let originalNext;
+if (carrouselSlides.length > 1) {
+	const lastSlide = carrouselSlides[carrouselSlides.length - 1];
+	const secondSlide = carrouselSlides[1];
+	lastSlide.style.animationName = "peakLeft";
+	lastSlide.style.opacity = "50%";
+	secondSlide.style.animationName = "peakRight";
+	secondSlide.style.opacity = "50%";
+	originalPrev = lastSlide;
+	originalNext = secondSlide;
+}
+
 // Event listeners for next and previous buttons
 
 const buttons = document.querySelectorAll("[data-carrousel-button]");
 
 buttons.forEach((button) => {
-	button.addEventListener("click", () => {
+	button.addEventListener("click", (e) => {
+		if (animating) return;
+		animating = true;
+		setTimeout(() => {
+			animating = false;
+		}, 400);
 		const offset = button.dataset.carrouselButton === "next" ? 1 : -1;
 		const slides = button
 			.closest("[data-carrousel]")
@@ -15,14 +34,33 @@ buttons.forEach((button) => {
 		if (newIndex < 0) newIndex = slides.children.length - 1;
 		if (newIndex >= slides.children.length) newIndex = 0;
 		const nextSlide = slides.children[newIndex];
+		let nextNewIndex = [...slides.children].indexOf(nextSlide) + offset;
+		if (nextNewIndex < 0) nextNewIndex = slides.children.length - 1;
+		if (nextNewIndex >= slides.children.length) nextNewIndex = 0;
+		const newNextSlide = slides.children[nextNewIndex];
+
+		let prevNewIndex = [...slides.children].indexOf(activeSlide) - offset;
+		if (prevNewIndex < 0) prevNewIndex = slides.children.length - 1;
+		if (prevNewIndex >= slides.children.length) prevNewIndex = 0;
+		const newPrevSlide = slides.children[prevNewIndex];
+
 		if (offset === 1) {
+			if (originalPrev) {
+				originalPrev.style.animationName = "exitPeakLeft";
+			} else {
+				newPrevSlide.style.animationName = "exitPeakLeft";
+			}
+			originalPrev = null;
 			activeSlide.style.animationName = "exitLeft";
 			nextSlide.style.animationName = "enterLeft";
+			newNextSlide.style.animationName = "peakLeft";
 		} else {
+			newPrevSlide.style.animationName = "exitPeakRight";
+			originalPrev = null;
 			activeSlide.style.animationName = "exitRight";
 			nextSlide.style.animationName = "enterRight";
+			newNextSlide.style.animationName = "peakRight";
 		}
-
 		nextSlide.dataset.active = true;
 		delete activeSlide.dataset.active;
 	});
