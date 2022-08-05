@@ -437,7 +437,7 @@ if (texto.pdf) {
 		const link = document.createElement("a");
 		const filePath = texto.pdf;
 		link.href = filePath;
-		link.download = filePath;
+		link.download = true;
 		link.click();
 	});
 }
