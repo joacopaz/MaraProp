@@ -116,11 +116,11 @@ switch (propiedad) {
 		texto.pdf = "../img/assets/fichas/Cabildo 9ºA.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 9°A";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
-		texto.alquilerMensual = "U$S 9.620,- + IVA";
-		texto.expensas = "$125.000,-";
+		texto.alquilerMensual = "U$S 4.320,- + IVA";
+		texto.expensas = "$58.000,-";
 		texto.antiguedad = "15 AÑOS";
 		texto.pisos = 12;
-		texto.superficie = "520 M²";
+		texto.superficie = "240 M²";
 		texto.medidas = ["FRENTE: 24,20 M. L", "FONDO: 21,50 M. L"];
 		texto.banios = "2 NÚCLEOS SANITARIOS";
 		texto.cocheras = 1;
@@ -284,7 +284,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 15":
 		src = "img/assets/fotosparacarrousel4/Olleros-1º.png";
-		texto.pdf = "../img/assets/fichas/Olleros Local Comercial.pdf";
+		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 1°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 5.000,- + IVA";
@@ -314,7 +314,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 16":
 		src = "img/assets/fotosparacarrousel4/Olleros-2º.png";
-		texto.pdf = "../img/assets/fichas/Olleros Local Comercial.pdf";
+		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 2°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 5.000,- + IVA";
@@ -343,7 +343,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 17":
 		src = "img/assets/fotosparacarrousel4/Olleros-3º.png";
-		texto.pdf = "../img/assets/fichas/Olleros Local Comercial.pdf";
+		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 3°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 5.000,- + IVA";
@@ -372,7 +372,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 18":
 		src = "img/assets/fotosparacarrousel4/Olleros-4º.png";
-		texto.pdf = "../img/assets/fichas/Olleros Local Comercial.pdf";
+		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 4°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 5.000,- + IVA";
