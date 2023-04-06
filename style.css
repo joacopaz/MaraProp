@@ -27,7 +27,7 @@ body {
 }
 
 .loader [alt="Loading"] {
-	width: 20vw;
+	width: 150px;
 	animation-name: rotate;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
