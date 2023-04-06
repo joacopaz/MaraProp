@@ -1,250 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-		<script
-			src="https://kit.fontawesome.com/6def926482.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
-		<title>Mara Propiedades</title>
-	</head>
-	<body>
-		<div class="loader"><img src="./img/assets/logomarapropenblancoyennegro/Logo Mara Prop Blanco.png" alt="Mara Prop"><img src="./img/cog.png" alt="Loading">
+	<script src="https://kit.fontawesome.com/6def926482.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+	<title>Mara Propiedades</title>
+</head>
+
+<body>
+	<div class="loader"><img src="./img/assets/logomarapropenblancoyennegro/Logo Mara Prop Blanco.png"
+			alt="Mara Prop"><img src="./img/cog.png" alt="Loading">
+	</div>
+	<span tabindex="1" onfocus='document.querySelector(".autofocus2").focus()'></span>
+	<div class="logo">
+		<button type="button" class="collapsible autofocus1" onclick="switchNav(); return false" tabindex="2">
+			<div class="menu"></div>
+		</button>
+		<img src="./Logo Mara Propiedades Blanco.png" alt="Logo" />
+		<button type="button" class="collapsible" onclick="searchbar()" tabindex="3">
+			<div class="search"></div>
+		</button>
+		<div id="search-bar">
+			<input list="propiedades" type="search" name="" placeholder="Buscar" />
+			<datalist id="propiedades">
+				<option value="Av. Cabildo 2677, Belgrano 4°A" data-propiedad="1"></option>
+				<option value="Av. Cabildo 2677, Belgrano 4°C" data-propiedad="2"></option>
+				<option value="Av. Cabildo 2677, Belgrano 5°" data-propiedad="3"></option>
+				<option value="Av. Cabildo 2677, Belgrano 6°" data-propiedad="4"></option>
+				<option value="Av. Cabildo 2677, Belgrano 9°A" data-propiedad="5"></option>
+				<option value="Av. Cabildo 2677, Belgrano 9°B" data-propiedad="6"></option>
+				<option value="Av. Córdoba 3341 PB" data-propiedad="7"></option>
+				<option value="Av. Cordoba 3341 PB" data-propiedad="7"></option>
+				<option value="Av. Córdoba 3341 1°" data-propiedad="8"></option>
+				<option value="Av. Cordoba 3341 1°" data-propiedad="8"></option>
+				<option value="Av. Córdoba 3341 2° y 3°" data-propiedad="9"></option>
+				<option value="Av. Cordoba 3341 2° y 3°" data-propiedad="9"></option>
+				<option value="Av. Humboldt 2495 3°" data-propiedad="10"></option>
+				<option value="Av. Humboldt 2495 4°" data-propiedad="11"></option>
+				<option value="Av. Humboldt 2495 5°" data-propiedad="12"></option>
+				<option value="Av. Humboldt 2495 6°" data-propiedad="13"></option>
+				<option value="Av. Humboldt 2495 7°" data-propiedad="14"></option>
+				<option value="Olleros 2387 1°" data-propiedad="15"></option>
+				<option value="Olleros 2387 2°" data-propiedad="16"></option>
+				<option value="Olleros 2387 3°" data-propiedad="17"></option>
+				<option value="Olleros 2387 4°" data-propiedad="18"></option>
+			</datalist>
 		</div>
-		<span
-			tabindex="1"
-			onfocus='document.querySelector(".autofocus2").focus()'
-		></span>
-		<div class="logo">
-			<button
-				type="button"
-				class="collapsible autofocus1"
-				onclick="switchNav(); return false"
-				tabindex="2"
-			>
-				<div class="menu"></div>
-			</button>
-			<img src="./Logo Mara Propiedades Blanco.png" alt="Logo" />
-			<button
-				type="button"
-				class="collapsible"
-				onclick="searchbar()"
-				tabindex="3"
-			>
-				<div class="search"></div>
-			</button>
-			<div id="search-bar">
-				<input list="propiedades" type="search" name="" placeholder="Buscar" />
-				<datalist id="propiedades">
-					<option
-						value="Av. Cabildo 2677, Belgrano 4°A"
-						data-propiedad="1"
-					></option>
-					<option
-						value="Av. Cabildo 2677, Belgrano 4°C"
-						data-propiedad="2"
-					></option>
-					<option
-						value="Av. Cabildo 2677, Belgrano 5°"
-						data-propiedad="3"
-					></option>
-					<option
-						value="Av. Cabildo 2677, Belgrano 6°"
-						data-propiedad="4"
-					></option>
-					<option
-						value="Av. Cabildo 2677, Belgrano 9°A"
-						data-propiedad="5"
-					></option>
-					<option
-						value="Av. Cabildo 2677, Belgrano 9°B"
-						data-propiedad="6"
-					></option>
-					<option value="Av. Córdoba 3341 PB" data-propiedad="7"></option>
-					<option value="Av. Cordoba 3341 PB" data-propiedad="7"></option>
-					<option value="Av. Córdoba 3341 1°" data-propiedad="8"></option>
-					<option value="Av. Cordoba 3341 1°" data-propiedad="8"></option>
-					<option value="Av. Córdoba 3341 2° y 3°" data-propiedad="9"></option>
-					<option value="Av. Cordoba 3341 2° y 3°" data-propiedad="9"></option>
-					<option value="Av. Humboldt 2495 3°" data-propiedad="10"></option>
-					<option value="Av. Humboldt 2495 4°" data-propiedad="11"></option>
-					<option value="Av. Humboldt 2495 5°" data-propiedad="12"></option>
-					<option value="Av. Humboldt 2495 6°" data-propiedad="13"></option>
-					<option value="Av. Humboldt 2495 7°" data-propiedad="14"></option>
-					<option value="Olleros 2387 1°" data-propiedad="15"></option>
-					<option value="Olleros 2387 2°" data-propiedad="16"></option>
-					<option value="Olleros 2387 3°" data-propiedad="17"></option>
-					<option value="Olleros 2387 4°" data-propiedad="18"></option>
-				</datalist>
-			</div>
-			<nav class="nav-menu">
-				<a href="#">Home</a>
-				<!-- <a href="#">Blog</a>
+		<nav class="nav-menu">
+			<a href="#">Home</a>
+			<!-- <a href="#">Blog</a>
 				<a href="#">Work</a>
 				<a href="#">About</a> -->
-				<div class="dot"></div>
-			</nav>
+			<div class="dot"></div>
+		</nav>
+	</div>
+	<header>
+		<nav>
+			<div>
+				<img src="./img/whatsapp.png" alt="whatsapp" /><a
+					href="https://api.WhatsApp.com/send?phone=5491165708040" tabindex="8" data-whatsapp>
+					<span>+54 9 11 6570 8040</span>
+				</a>
+			</div>
+			<div>
+				<img src="./img/phone.png" alt="phone" /><a href="tel:541147812545" tabindex="9">+ 54 11 4781 2545</a>
+				| <a href="tel:541147884780" tabindex="10">+ 54 11 4788 4780</a><span></span>
+			</div>
+			<div>
+				<img src="./img/mail.png" alt="mail" />
+				<a href="mailto:propiedadesmara@gmail.com" tabindex="11">
+					<span>propiedadesmara@gmail.com</span>
+				</a>
+			</div>
+		</nav>
+	</header>
+	<section class="carrousel" data-carrousel>
+		<div class="prev" tabindex="12" data-carrousel-button="prev">
+			<i class="fa-solid fa-arrow-left"></i>
 		</div>
-		<header>
-			<nav>
-				<div>
-					<img src="./img/whatsapp.png" alt="whatsapp" /><a
-						href="https://api.WhatsApp.com/send?phone=5491165708040"
-						tabindex="8"
-						data-whatsapp
-					>
-						<span>+54 9 11 6570 8040</span>
-					</a>
-				</div>
-				<div>
-					<img src="./img/phone.png" alt="phone" /><a
-						href="tel:541147812545"
-						tabindex="9"
-						>+ 54 11 4781 2545</a
-					>
-					| <a href="tel:541147884780" tabindex="10">+ 54 11 4788 4780</a
-					><span></span>
-				</div>
-				<div>
-					<img src="./img/mail.png" alt="mail" />
-					<a href="mailto:propiedadesmara@gmail.com" tabindex="11">
-						<span>propiedadesmara@gmail.com</span>
-					</a>
-				</div>
-			</nav>
-		</header>
-		<section class="carrousel" data-carrousel>
-			<div class="prev" tabindex="12" data-carrousel-button="prev">
-				<i class="fa-solid fa-arrow-left"></i>
-			</div>
-			<div class="next autofocus2" tabindex="13" data-carrousel-button="next">
-				<i class="fa-solid fa-arrow-right"></i>
-			</div>
-			<ul class="slides" data-slides>
-				<li class="slide" data-active>
-					<img
-						src="./img/assets/fotosparacarrousel1/Cabildo-4ºA.png"
-						alt="Propiedad 1"
-					/>
-				</li>
-				<li class="slide">
-					<img
-						src="./img/assets/fotosparacarrousel1/Cabildo-4ºC.png"
-						alt="Propiedad 2"
-					/>
-				</li>
-				<li class="slide">
-					<img
-						src="./img/assets/fotosparacarrousel1/Cabildo-5º.png"
-						alt="Propiedad 3"
-					/>
-				</li>
-				<li class="slide">
-					<img
-						src="./img/assets/fotosparacarrousel1/Cabildo-6º.png"
-						alt="Propiedad 4"
-					/>
-				</li>
-				<li class="slide">
-					<img
-						src="./img/assets/fotosparacarrousel1/Cabildo-9ºA.png"
-						alt="Propiedad 5"
-					/>
-				</li>
-				<li class="slide">
-					<img
-						src="./img/assets//fotosparacarrousel1/Cabildo-9ºB.png"
-						alt="Propiedad 6"
-					/>
-				</li>
-				<li class="slide">
-					<img
-						src="img/assets/fotosparacarrousel2/Haiti-PB.png"
-						alt="Propiedad 7"
-					/>
-				<li class="slide">
-						<img
-							src="./img/assets/fotosparacarrousel2/Haiti-1º.png"
-							alt="Propiedad 8"
-						/>
-				</li>
-				<li class="slide">
-						<img
-							src="./img/assets/fotosparacarrousel2/Haiti-2º-y-3º.png"
-							alt="Propiedad 9"
-						/>
-				</li>
-				</li>
-				<li class="slide">
-					<img
-						src="img/assets/fotosparacarrousel3/Humboldt-3º.png"
-						alt="Propiedad 10"
-					/> 
-				</li>
-				<li class="slide">
-						<img
-							src="img/assets/fotosparacarrousel3/Humboldt-4º.png"
-							alt="Propiedad 11"
-						/>
-				</li>
-				<li class="slide">
-						<img
-							src="img/assets/fotosparacarrousel3/Humboldt-5º.png"
-							alt="Propiedad 12"
-						/>
-				</li>
-				<li class="slide">
-					<img
-						src="img/assets/fotosparacarrousel3/Humboldt-6º.png"
-						alt="Propiedad 13"
-					/> 
-				</li>
-				<li class="slide">
-						<img
-							src="img/assets/fotosparacarrousel3/Humboldt-7º.png"
-							alt="Propiedad 14"
-						/>
-				</li>
-				<li class="slide">
-						<img
-							src="img/assets/fotosparacarrousel4/Olleros-1º.png"
-							alt="Propiedad 15"
-						/>
-				</li>
-				<li class="slide">
-					<img
-						src="img/assets/fotosparacarrousel4/Olleros-2º.png"
-						alt="Propiedad 16"
-					/>
-				</li>
-				<li class="slide">
-						<img
-							src="img/assets/fotosparacarrousel4/Olleros-3º.png"
-							alt="Propiedad 17"
-						/>
-				</li>
-				<li class="slide">
-						<img
-							src="img/assets/fotosparacarrousel4/Olleros-4º.png"
-							alt="Propiedad 18"
-						/>
-				</li>
-			</ul>
-		</section>
-		<span
-			tabindex="14"
-			onfocus="document.querySelector('.autofocus1').focus()"
-		></span>
-		<script src="scripts/loader.js"></script>
-		<script src="scripts/carrousel.js"></script>
-		<script src="scripts/navbar.js"></script>
-		<script src="scripts/searchbar.js"></script>
-		<script src="scripts/whatsapp.js"></script>
-	</body>
+		<div class="next autofocus2" tabindex="13" data-carrousel-button="next">
+			<i class="fa-solid fa-arrow-right"></i>
+		</div>
+		<ul class="slides" data-slides>
+			<li class="slide" data-active>
+				<img src="./img/assets/fotosparacarrousel1/Cabildo-4ºA.webp" alt="Propiedad 1" />
+			</li>
+			<li class="slide">
+				<img src="./img/assets/fotosparacarrousel1/Cabildo-4ºC.webp" alt="Propiedad 2" />
+			</li>
+			<li class="slide">
+				<img src="./img/assets/fotosparacarrousel1/Cabildo-5º.webp" alt="Propiedad 3" />
+			</li>
+			<li class="slide">
+				<img src="./img/assets/fotosparacarrousel1/Cabildo-6º.webp" alt="Propiedad 4" />
+			</li>
+			<li class="slide">
+				<img src="./img/assets/fotosparacarrousel1/Cabildo-9ºA.webp" alt="Propiedad 5" />
+			</li>
+			<li class="slide">
+				<img src="./img/assets//fotosparacarrousel1/Cabildo-9ºB.webp" alt="Propiedad 6" />
+			</li>
+			<li class="slide">
+				<img src="img/assets/fotosparacarrousel2/Haiti-PB.webp" alt="Propiedad 7" />
+			<li class="slide">
+				<img src="./img/assets/fotosparacarrousel2/Haiti-1º.webp" alt="Propiedad 8" />
+			</li>
+			<li class="slide">
+				<img src="./img/assets/fotosparacarrousel2/Haiti-2º-y-3º.webp" alt="Propiedad 9" />
+			</li>
+			</li>
+			<li class="slide">
+				<img src="img/assets/fotosparacarrousel3/Humboldt-3º.webp" alt="Propiedad 10" />
+			</li>
+			<li class="slide">
+				<img src="img/assets/fotosparacarrousel3/Humboldt-4º.webp" alt="Propiedad 11" />
+			</li>
+			<li class="slide">
+				<img src="img/assets/fotosparacarrousel3/Humboldt-5º.webp" alt="Propiedad 12" />
+			</li>
+			<li class="slide">
+				<img src="img/assets/fotosparacarrousel3/Humboldt-6º.webp" alt="Propiedad 13" />
+			</li>
+			<li class="slide">
+				<img src="img/assets/fotosparacarrousel3/Humboldt-7º.webp" alt="Propiedad 14" />
+			</li>
+			<li class="slide">
+				<img src="img/assets/fotosparacarrousel4/Olleros-1º.webp" alt="Propiedad 15" />
+			</li>
+			<li class="slide">
+				<img src="img/assets/fotosparacarrousel4/Olleros-2º.webp" alt="Propiedad 16" />
+			</li>
+			<li class="slide">
+				<img src="img/assets/fotosparacarrousel4/Olleros-3º.webp" alt="Propiedad 17" />
+			</li>
+			<li class="slide">
+				<img src="img/assets/fotosparacarrousel4/Olleros-4º.webp" alt="Propiedad 18" />
+			</li>
+		</ul>
+	</section>
+	<span tabindex="14" onfocus="document.querySelector('.autofocus1').focus()"></span>
+	<script src="scripts/loader.js"></script>
+	<script src="scripts/carrousel.js"></script>
+	<script src="scripts/navbar.js"></script>
+	<script src="scripts/searchbar.js"></script>
+	<script src="scripts/whatsapp.js"></script>
+</body>
+
 </html>

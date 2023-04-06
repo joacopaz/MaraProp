@@ -23,7 +23,7 @@ let texto = {};
 // Switch to generate object according to the sessionStorage selection
 switch (propiedad) {
 	case "Propiedad 1":
-		src = "./img/assets/fotosparacarrousel1/Cabildo-4ºA.png";
+		src = "./img/assets/fotosparacarrousel1/Cabildo-4ºA.webp";
 		texto.pdf = "../img/assets/fichas/Cabildo 4ºA.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 4°A";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
@@ -45,7 +45,7 @@ switch (propiedad) {
 		];
 		break;
 	case "Propiedad 2":
-		src = "./img/assets/fotosparacarrousel1/Cabildo-4ºC.png";
+		src = "./img/assets/fotosparacarrousel1/Cabildo-4ºC.webp";
 		texto.pdf = "../img/assets/fichas/Cabildo 4ºC.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 4°C";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
@@ -68,7 +68,7 @@ switch (propiedad) {
 		];
 		break;
 	case "Propiedad 3":
-		src = "./img/assets/fotosparacarrousel1/Cabildo-5º.png";
+		src = "./img/assets/fotosparacarrousel1/Cabildo-5º.webp";
 		texto.pdf = "../img/assets/fichas/Cabildo 5º.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 5°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
@@ -90,7 +90,7 @@ switch (propiedad) {
 		];
 		break;
 	case "Propiedad 4":
-		src = "./img/assets/fotosparacarrousel1/Cabildo-6º.png";
+		src = "./img/assets/fotosparacarrousel1/Cabildo-6º.webp";
 		texto.pdf = "../img/assets/fichas/Cabildo 6º.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 6°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
@@ -112,7 +112,7 @@ switch (propiedad) {
 		];
 		break;
 	case "Propiedad 5":
-		src = "./img/assets/fotosparacarrousel1/Cabildo-9ºA.png";
+		src = "./img/assets/fotosparacarrousel1/Cabildo-9ºA.webp";
 		texto.pdf = "../img/assets/fichas/Cabildo 9ºA.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 9°A";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
@@ -134,7 +134,7 @@ switch (propiedad) {
 		];
 		break;
 	case "Propiedad 6":
-		src = "./img/assets//fotosparacarrousel1/Cabildo-9ºB.png";
+		src = "./img/assets//fotosparacarrousel1/Cabildo-9ºB.webp";
 		texto.pdf = "../img/assets/fichas/Cabildo 9ºB.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 9°B";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
@@ -156,7 +156,7 @@ switch (propiedad) {
 		];
 		break;
 	case "Propiedad 7":
-		src = "img/assets/fotosparacarrousel2/Haiti-PB.png";
+		src = "img/assets/fotosparacarrousel2/Haiti-PB.webp";
 		texto.pdf = null;
 		texto.ubicacion = `N/A`;
 		texto.tipo = `N/A`;
@@ -171,7 +171,7 @@ switch (propiedad) {
 		texto.descripcion = [`N/A`];
 		break;
 	case "Propiedad 8":
-		src = "./img/assets/fotosparacarrousel2/Haiti-1º.png";
+		src = "./img/assets/fotosparacarrousel2/Haiti-1º.webp";
 		texto.pdf = null;
 		texto.ubicacion = `N/A`;
 		texto.tipo = `N/A`;
@@ -187,7 +187,7 @@ switch (propiedad) {
 		break;
 		break;
 	case "Propiedad 9":
-		src = "./img/assets/fotosparacarrousel2/Haiti-2º-y-3º.png";
+		src = "./img/assets/fotosparacarrousel2/Haiti-2º-y-3º.webp";
 		texto.pdf = null;
 		texto.ubicacion = `N/A`;
 		texto.tipo = `N/A`;
@@ -203,7 +203,7 @@ switch (propiedad) {
 		break;
 		break;
 	case "Propiedad 10":
-		src = "img/assets/fotosparacarrousel3/Humboldt-3º.png";
+		src = "img/assets/fotosparacarrousel3/Humboldt-3º.webp";
 		texto.pdf = null;
 		texto.ubicacion = `N/A`;
 		texto.tipo = `N/A`;
@@ -219,7 +219,7 @@ switch (propiedad) {
 		break;
 		break;
 	case "Propiedad 11":
-		src = "img/assets/fotosparacarrousel3/Humboldt-4º.png";
+		src = "img/assets/fotosparacarrousel3/Humboldt-4º.webp";
 		texto.pdf = null;
 		texto.ubicacion = `N/A`;
 		texto.tipo = `N/A`;
@@ -235,7 +235,7 @@ switch (propiedad) {
 		break;
 		break;
 	case "Propiedad 12":
-		src = "img/assets/fotosparacarrousel3/Humboldt-5º.png";
+		src = "img/assets/fotosparacarrousel3/Humboldt-5º.webp";
 		texto.pdf = null;
 		texto.ubicacion = `N/A`;
 		texto.tipo = `N/A`;
@@ -251,7 +251,7 @@ switch (propiedad) {
 		break;
 		break;
 	case "Propiedad 13":
-		src = "img/assets/fotosparacarrousel3/Humboldt-6º.png";
+		src = "img/assets/fotosparacarrousel3/Humboldt-6º.webp";
 		texto.pdf = null;
 		texto.ubicacion = `N/A`;
 		texto.tipo = `N/A`;
@@ -267,7 +267,7 @@ switch (propiedad) {
 		break;
 		break;
 	case "Propiedad 14":
-		src = "img/assets/fotosparacarrousel3/Humboldt-7º.png";
+		src = "img/assets/fotosparacarrousel3/Humboldt-7º.webp";
 		texto.pdf = null;
 		texto.ubicacion = `N/A`;
 		texto.tipo = `N/A`;
@@ -283,7 +283,7 @@ switch (propiedad) {
 		break;
 		break;
 	case "Propiedad 15":
-		src = "img/assets/fotosparacarrousel4/Olleros-1º.png";
+		src = "img/assets/fotosparacarrousel4/Olleros-1º.webp";
 		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 1°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
@@ -313,7 +313,7 @@ switch (propiedad) {
 
 		break;
 	case "Propiedad 16":
-		src = "img/assets/fotosparacarrousel4/Olleros-2º.png";
+		src = "img/assets/fotosparacarrousel4/Olleros-2º.webp";
 		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 2°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
@@ -342,7 +342,7 @@ switch (propiedad) {
 		];
 		break;
 	case "Propiedad 17":
-		src = "img/assets/fotosparacarrousel4/Olleros-3º.png";
+		src = "img/assets/fotosparacarrousel4/Olleros-3º.webp";
 		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 3°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
@@ -371,7 +371,7 @@ switch (propiedad) {
 		];
 		break;
 	case "Propiedad 18":
-		src = "img/assets/fotosparacarrousel4/Olleros-4º.png";
+		src = "img/assets/fotosparacarrousel4/Olleros-4º.webp";
 		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 4°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
