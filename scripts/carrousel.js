@@ -119,7 +119,7 @@ imgs.forEach((img) => {
 		const alt = e.target.alt;
 		sessionStorage.setItem("propiedad", alt);
 		e.preventDefault();
-		location.href = "../propiedad.html";
+		location.href = "./propiedad.html";
 	});
 });
 

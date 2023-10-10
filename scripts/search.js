@@ -45,7 +45,7 @@ if (results.length < 1) {
 	document.querySelector(".results h4").textContent =
 		"No se han encontrado resultados!";
 	const a = document.createElement("a");
-	a.href = "../index.html";
+	a.href = "./index.html";
 	a.textContent = "Regresar";
 	a.classList.add("link");
 	document.querySelector(".results").appendChild(a);

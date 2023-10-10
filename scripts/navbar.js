@@ -2,7 +2,7 @@ let nav = document.querySelector(".nav-menu");
 const logo = document.querySelector(".logo img");
 
 logo.addEventListener("click", () => {
-	window.location = "../index.html";
+	window.location = "./index.html";
 });
 
 let state = 0;

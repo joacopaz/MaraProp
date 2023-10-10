@@ -1,7 +1,7 @@
 const propiedad = sessionStorage.getItem("propiedad");
 // In case there is no session storage bump to home page
 if (!propiedad) {
-	location.href = "../index.html";
+	location.href = "./index.html";
 }
 const slide = document.querySelector("[data-active]");
 const slides = document.querySelector(".slides");
@@ -24,7 +24,7 @@ let texto = {};
 switch (propiedad) {
 	case "Propiedad 1":
 		src = "./img/assets/fotosparacarrousel1/Cabildo-4ºA.webp";
-		texto.pdf = "../img/assets/fichas/Cabildo 4ºA.pdf";
+		texto.pdf = "./img/assets/fichas/Cabildo 4ºA.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 4°A";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 4.320,- + IVA";
@@ -46,7 +46,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 2":
 		src = "./img/assets/fotosparacarrousel1/Cabildo-4ºC.webp";
-		texto.pdf = "../img/assets/fichas/Cabildo 4ºC.pdf";
+		texto.pdf = "./img/assets/fichas/Cabildo 4ºC.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 4°C";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 1.260,- + IVA";
@@ -69,7 +69,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 3":
 		src = "./img/assets/fotosparacarrousel1/Cabildo-5º.webp";
-		texto.pdf = "../img/assets/fichas/Cabildo 5º.pdf";
+		texto.pdf = "./img/assets/fichas/Cabildo 5º.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 5°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 9.360,- + IVA";
@@ -91,7 +91,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 4":
 		src = "./img/assets/fotosparacarrousel1/Cabildo-6º.webp";
-		texto.pdf = "../img/assets/fichas/Cabildo 6º.pdf";
+		texto.pdf = "./img/assets/fichas/Cabildo 6º.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 6°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 9.620,- + IVA";
@@ -113,7 +113,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 5":
 		src = "./img/assets/fotosparacarrousel1/Cabildo-9ºA.webp";
-		texto.pdf = "../img/assets/fichas/Cabildo 9ºA.pdf";
+		texto.pdf = "./img/assets/fichas/Cabildo 9ºA.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 9°A";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 4.320,- + IVA";
@@ -135,7 +135,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 6":
 		src = "./img/assets//fotosparacarrousel1/Cabildo-9ºB.webp";
-		texto.pdf = "../img/assets/fichas/Cabildo 9ºB.pdf";
+		texto.pdf = "./img/assets/fichas/Cabildo 9ºB.pdf";
 		texto.ubicacion = "AV. CABILDO 2677, BELGRANO 9°B";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 4.680,- + IVA";
@@ -284,7 +284,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 15":
 		src = "img/assets/fotosparacarrousel4/Olleros-1º.webp";
-		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
+		texto.pdf = "./img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 1°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 5.000,- + IVA";
@@ -314,7 +314,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 16":
 		src = "img/assets/fotosparacarrousel4/Olleros-2º.webp";
-		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
+		texto.pdf = "./img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 2°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 5.000,- + IVA";
@@ -343,7 +343,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 17":
 		src = "img/assets/fotosparacarrousel4/Olleros-3º.webp";
-		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
+		texto.pdf = "./img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 3°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 5.000,- + IVA";
@@ -372,7 +372,7 @@ switch (propiedad) {
 		break;
 	case "Propiedad 18":
 		src = "img/assets/fotosparacarrousel4/Olleros-4º.webp";
-		texto.pdf = "../img/assets/fichas/Olleros Oficinas.pdf";
+		texto.pdf = "./img/assets/fichas/Olleros Oficinas.pdf";
 		texto.ubicacion = "OLLEROS 2387, BELGRANO 4°";
 		texto.tipo = "OFICINA ADMINISTRATIVA Y COMERCIAL";
 		texto.alquilerMensual = "U$S 5.000,- + IVA";
@@ -428,7 +428,7 @@ if (texto.pdf) {
 	pdf.classList.add("pdf");
 	document.querySelector(".property").appendChild(pdf);
 	const pdfImg = document.createElement("img");
-	pdfImg.src = "../img/pdf.png";
+	pdfImg.src = "./img/pdf.png";
 	pdf.appendChild(pdfImg);
 	const pdfP = document.createElement("p");
 	pdfP.textContent = "Descargar Ficha";
