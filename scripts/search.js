@@ -34,10 +34,10 @@ if (results)
 		li.textContent = result;
 		li.addEventListener("click", () => {
 			const id = Object.keys(properties).find(
-				(propiedad) => properties[propiedad] === li.textContent
+				(propiedad) => properties[propiedad] === li.textContent,
 			);
 			sessionStorage.setItem("propiedad", id);
-			location.href = "../propiedad.html";
+			location.href = "./propiedad.html";
 		});
 		resultList.appendChild(li);
 	});
@@ -45,7 +45,6 @@ if (results.length < 1) {
 	document.querySelector(".results h4").textContent =
 		"No se han encontrado resultados!";
 	const a = document.createElement("a");
-	console.log(a);
 	a.href = "../index.html";
 	a.textContent = "Regresar";
 	a.classList.add("link");
