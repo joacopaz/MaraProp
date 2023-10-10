@@ -1,6 +1,6 @@
 # MaraProp
 
-Website: [Mara Propiedades](http://www.maraprop.com.ar/)
+Website: [Mara Propiedades](https://joacopaz.github.io/MaraProp/)
 
 Website for a Real Estate Company in Argentina.
 
