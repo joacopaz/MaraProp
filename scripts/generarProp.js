@@ -441,3 +441,8 @@ if (texto.pdf) {
 		link.click();
 	});
 }
+const header = document.getElementById("header");
+header.scrollIntoView({
+	behavior: "smooth",
+	block: "start",
+});
